@@ -1,5 +1,5 @@
 # uPort - Un semplice caso d'uso        
-![GitHub repo size](https://img.shields.io/github/repo-size/alexnicco98/uPortTest) ![GitHub](https://img.shields.io/github/license/alexnicco98/uPortTest) ![GitHub top language](https://img.shields.io/github/languages/top/alexnicco98/uPortTest?color=red)
+![GitHub repo size](https://img.shields.io/github/languages/code-size/alexnicco98/uPortTest) ![GitHub](https://img.shields.io/github/license/alexnicco98/uPortTest) ![GitHub top language](https://img.shields.io/github/languages/top/alexnicco98/uPortTest?color=red)
  
  ## Introduzione   
  Questo è un caso d'uso realizzato per la tesi, in cui andremo ad utilizzare il nuovo modello di identità digitale Self Sovereign Identity. Quello che vogliamo fare è, andare ad effettuare il vaccino per il COVID-19 ed in seguito prendere un volo in cui è richiesta una certificazione che attesta il vaccino fatto. Andremo ad utilizzare l'app fornita da uPort (disponibile su Android e IOS).Nel dettaglio andremo a dividere  il test in due parti:
