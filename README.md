@@ -10,7 +10,7 @@
 ## Come eseguire il codice
 Per proseguire con il test è necessario scaricare sul proprio dispositivo mobile l'app di uPort (su Android è disponibile direttamente sul play store).   
 
-Anche in questa parte divideremi il test in due parti, con le rispettive cartelle:
+Anche in questa parte divideremo il test in due parti, con le rispettive cartelle:
 
 1. Iniziamo dalla parte del laboratorio<br /> Entriamo all'interno della cartella ed eseguiamo il codice (che avvierà il server del laboratorio) con <br />
 `cd laboratorio` <br />
