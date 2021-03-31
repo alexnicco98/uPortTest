@@ -19,10 +19,9 @@ Anche in questa parte divideremi il test in due parti, con le rispettive cartell
 Prediamo ora l'applicazione uport precedentemente scaricata. Essendo il primo login dovremmo inserire delle informazioni che verranno legate alla nostra identità (nome, email, numero di telefono,ecc).
 Una volta finito siamo pronti per aprire il codice QR di cui troveremo il link generato nel terminale, lo apriamo e scansionamo il codice QR.
 Ci verrà inviata una richiesta di informazioni, una volta accettata, ci verrà inviata un'attestazione per provare che abbiamo fatto il vaccino e una volta accettata sarà disponibile tra le attestazioni nella home dell'applicazione.
-2. Nella seconda parte andremo a interagire con il dipendente dell'aeroporto che verificherà l'attestazione che riguarda il vaccino. Quindi torniamo indietro ed andiamo nella carte specifica
+2. Nella seconda parte andremo a interagire con il dipendente dell'aeroporto che verificherà l'attestazione che riguarda il vaccino. Quindi torniamo indietro ed andiamo nella carte specifica <br />
 `cd ..` <br />
 `cd aeroporto` <br />
 `npm i`    		<br />
 `npm start`  		<br />
-
 Torniamo nell'applicazione e scansioniamo il codice QR che troviamo al link generato nel terminale. Dopo di che, accettiamo la richiesta di informazioni. Una volta che il server dell'aeroporto avrà verificato le informazioni, riporterà l'esito sul terminale.
