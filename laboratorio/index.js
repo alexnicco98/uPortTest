@@ -46,7 +46,7 @@ function monthsInSeconds(num) {
     return (num * month);
 };
 
-// return the date in dd/mm/yy
+// restituisce la data nel formato dd/mm/yy
 function dateNow(){
     var date=new Date();
     day=date.getDate();
@@ -83,21 +83,16 @@ app.get('/', (req, res) => {
     notifications: true, // boolean per la possibilità di inviare notifiche push
     accountType: 'keypair', // Tipo di account Ethereum: "general", "segregated", "keypair", or "none"
     callbackUrl: endpoint + '/callback', // l'url che si desidera ricevere per la risposta di questa richiesta
-    //requested: ['name', 'phone', 'email'],
     claims: {
         verifiable: {
-            passaportoTest: {
-                iss: [
-                    {
-                        did: 'did:ethr:0xabaa05d69628829e0b79204338cf61ae68790df2',
-                        url: 'https://uport.claims/passport'
-                    }
-                ],
-            reason: 'per prova'
-        }
+            cartaIdentità: {
+                essential: true,
+                reason: "Per controllare l'identità della persona"
+            }
         },
         user_info: {
-            name: { essential: true, reason: "per controllare il nome"},
+            name: { essential: true, reason: "Per controllare il nome"},
+            email: { essential: true, reason: "Per contattare l'utente"},
             country: null
         }
     }
