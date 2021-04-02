@@ -56,20 +56,21 @@ app.get('/', (req, res) => {
   // creazione di una richiesta di informazioni, richiedere il token
   // della notifica push e una nuova chiave
   credentials.createDisclosureRequest({
-    //verified: ['laboratorioTest','name','passaportoTest'], // titolo del claim
     claims: {
-        passaportoTest: {
-            essential: true,
-            reason: 'Per poter prendere il volo'
+        verifiable:{
+            passaporto: {
+                essential: true,
+                reason: 'Per poter prendere il volo'
+            },
+            laboratorioTest:{
+                essential: true,
+                reason: 'Per verificare attestazione del vaccino'
+            }
         },
         user_info: {
             name: { essential: true, reason: "Per controllare il nome"},
             email: null,
             country: null
-        },
-        laboratorioTest:{
-            essential: true,
-            reason: 'Per verificare attestazione del vaccino'
         }
     },
     callbackUrl: endpoint + '/callback' // l'url che si desidera ricevere per la risposta di questa richiesta
